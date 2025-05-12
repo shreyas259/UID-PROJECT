@@ -4,109 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranga Sai Shreyas - Portfolio</title>
-    <style>
-       body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('artistic-blurry-colorful-wallpaper-background.jpg');
-    background-size: cover;
-    background-position: center;
    
+    <style>
+        
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('artistic-blurry-colorful-wallpaper-background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 header {
-    background-color: #1cb3e6;
-    padding: 20px;
-    text-align: center;
+  background-color: #1cb3e6;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
-.project {
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    margin-left: 50px;
-    
+.project, .project1 {
+  background: white;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  max-width: 80%;
 }
-.project1{
-    background: white;
-    padding: 15px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin-left: 200px;
+
+.project1 {
+  display: flex;
+  justify-content: center;
 }
 
 button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 footer {
-    background-color: #add8e6;
-    padding: 10px;
-    margin-top: 20px;
-}
-#skills p{
-    margin-left: 500px;
-    font-style: italic;
-    font-weight: 500;
-}
-#contact{
-    display: flex;
-    justify-content: center;
-}
-.contactid{
-    margin-left: 200px;
-}
-.contactlink{
-    margin-left: 300px;
-    text-decoration: none;
-    color: black;
-}
-button{
-    margin-left: 200px;
-    border: 1px solid black;
+  background-color: #add8e6;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
 }
 
+#skills p {
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 60%;
+  text-align: center;
+}
 
-    </style>
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-link img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.contact-link img:hover {
+  transform: scale(1.1);
+}
+        </style>
+
 </head>
 <body>
     <header>
@@ -159,14 +170,36 @@ button{
             <button type="submit">Send</button>
         </form>
     </section>
-        <div class="social-links">
-            <h4 class="contactid">Gmail:-</h4><a href="mailto:rangasaishreyas7@gmail.com" class="contactlink"><button style="border:none; background-color:none"><img src="gmail.png"></button></a>
-            <br>
-            <h4 class="contactid">Github:-</h4><a href="https://github.com/shreyas259" class="contactlink"><button style="border:none; background-color:none"><img src="git.png"></button></a>
-            <br>
-            <h4 class="contactid">Linkedin:-</h4><a href="https://www.linkedin.com/in/ranga-sai-shreyas-405b06320?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZUwbEm8TRG%2Bbs9u27pSFZw%3D%3D" class="contactlink"><button style="border:none; background-color:none"><img src="linkedin.png"></button></a>
-            <h4 class="contactid">Instagram:-</h4><a href="https://www.instagram.com/shreyas.ranga.5" class="contactlink"><button style="border:none; background-color:none"><img src="instagram.png"></button></a>
-        </div>
+<div class="social-links">
+  <div class="contact-item">
+    <h4>Gmail:</h4>
+    <a href="mailto:rangasaishreyas7@gmail.com" class="contact-link">
+      <img src="gmail.png" alt="Gmail" />
+    </a>
+  </div>
+
+  <div class="contact-item">
+    <h4>GitHub:</h4>
+    <a href="https://github.com/shreyas259" target="_blank" class="contact-link">
+      <img src="git.png" alt="GitHub" />
+    </a>
+  </div>
+
+  <div class="contact-item">
+    <h4>LinkedIn:</h4>
+    <a href="https://www.linkedin.com/in/ranga-sai-shreyas-405b06320" target="_blank" class="contact-link">
+      <img src="linkedin.png" alt="LinkedIn" />
+    </a>
+  </div>
+
+  <div class="contact-item">
+    <h4>Instagram:</h4>
+    <a href="https://www.instagram.com/shreyas.ranga.5" target="_blank" class="contact-link">
+      <img src="instagram.png" alt="Instagram" />
+    </a>
+  </div>
+</div>
+
     
   
 </body>
